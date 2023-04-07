@@ -1,17 +1,17 @@
 export const categories =  [
   {
     "id" : 1,
-    "name": "concerts",
+    "name": "Concerts",
     "image": "concert.png"
   },
   {
     "id" : 2,
-    "name": "movies",
+    "name": "Movies",
     "image": "movies.png"
   },
   {
     "id" : 3,
-    "name": "theatre",
+    "name": "Theatre",
     "image": "theatre.png"
   },
 
