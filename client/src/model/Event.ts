@@ -1,3 +1,5 @@
+import {Category} from "./Category";
+
 export interface Event {
   id: number;
   title: String;
@@ -8,4 +10,5 @@ export interface Event {
   duration: number; // in minutes
   poster: String; // poster of the event
   capacity: number; // number of tickets
+  category: Category;
 }
