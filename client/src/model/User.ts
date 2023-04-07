@@ -8,6 +8,5 @@ export interface User {
   phoneNumber: String;
   email: String;
   city: String;
-  myTickets: Array<Ticket>;
-  purchaseHistory: Array<Ticket>
+  tickets: Array<Ticket>
 }
