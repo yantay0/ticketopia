@@ -1,0 +1,21 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.category {
+  text-align: center;
+  margin: 10px;
+}
+
+.category-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.category-title {
+  margin-top: 10px;
+}
