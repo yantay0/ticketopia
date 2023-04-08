@@ -7,11 +7,15 @@ import { EventsComponent } from './component/events/events.component';
 import { AppRoutingModule } from './app-routing.module';
 import {HttpClientModule} from "@angular/common/http";
 import {NgOptimizedImage} from "@angular/common";
+import { TopBarComponent } from './component/top-bar/top-bar.component';
+import { SearchComponent } from './component/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventsComponent
+    EventsComponent,
+    TopBarComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
