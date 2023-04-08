@@ -6,7 +6,9 @@ import {CategoryEventsComponent} from "./component/category-events/category-even
 
 const routes: Routes = [
   {path: '', redirectTo: 'ticketopia.kz', pathMatch: 'full'},
-  {path: 'ticketopia.kz', component: CategoryEventsComponent}
+  // {path: 'ticketopia.kz', component: CategoryEventsComponent},
+  {path: ':category', component: CategoryEventsComponent},
+  // { path: '**', redirectTo: '' }
 ];
 
 

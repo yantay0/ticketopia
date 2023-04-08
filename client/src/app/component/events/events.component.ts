@@ -11,17 +11,13 @@ import {Category} from "../../model/Category";
 })
 export class EventsComponent implements OnInit {
   categories = categories;
-
-  filteredCategories = events;
-  allEvents = events;
-  selectedCategory: String;
-
+  selectedCategory: Category;
   ngOnInit(): void {
 
   }
 
   constructor() {
-    this.selectedCategory = "Concert";
+    this.selectedCategory = categories[0];
   }
 
 
