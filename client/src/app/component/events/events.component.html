@@ -1,13 +1,9 @@
-<div class="banner">
-  <img src="../../../assets/banner1.png">
-  <img src="../../../assets/banner2.png">
-  <img src="../../../assets/banner3.png">
-  <img src="../../../assets/banner4.png">
-  <img src="../../../assets/banner5.png">
-</div>
+
 <div class="categories">
-  <div class="category" *ngFor="let category of categories">
-    <img class="category-image" src="assets/{{category.image}}" alt="{{category.name}}">
-    <h2 class="category-title">{{category.name}}</h2>
-  </div>
+  <a class="category-button" *ngFor="let category of categories">
+    <button class="category">
+      <img class="category-image" src="assets/{{category.image}}" alt="{{category.name}}">
+      <h2 class="category-title">{{category.name}}</h2>
+    </button>
+  </a>
 </div>
