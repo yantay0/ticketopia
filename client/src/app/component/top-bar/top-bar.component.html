@@ -1,12 +1,22 @@
-<div class="top-bar">
-    <div class="logo">
-        <img src="../../../assets/logo.png" width="280">
-    </div>
-
-    <app-search></app-search>
-
-    <div class="account">
-        <a href=""> <img src="../../../assets/account.png" width="35"> </a>
-        <a href="" class="acc"> <h2 class="">Sign in</h2> </a>
-    </div>
+<div class="banner">
+  <img src="../../../assets/banner1.png">
+  <img src="../../../assets/banner2.png">
+  <img src="../../../assets/banner3.png">
+  <img src="../../../assets/banner4.png">
+  <img src="../../../assets/banner5.png">
 </div>
+
+<div class="top-bar">
+  <div class="logo">
+    <img src="../../../assets/logo.png" width="280">
+  </div>
+
+  <app-search></app-search>
+  <app-events></app-events>
+  <div class="account">
+    <button class="signin-btn" (click)="signIn()">
+      Sign in
+    </button>
+  </div>
+</div>
+
