@@ -42,7 +42,8 @@ export const events = [
       "name": "Concerts",
       "image": "concert.png",
       "selected": true
-    }
+    },
+    "genre": "drama"
   },
 
 //   {
