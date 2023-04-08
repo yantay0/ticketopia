@@ -9,13 +9,15 @@ import {HttpClientModule} from "@angular/common/http";
 import {NgOptimizedImage} from "@angular/common";
 import { TopBarComponent } from './component/top-bar/top-bar.component';
 import { SearchComponent } from './component/search/search.component';
+import {CategoryEventsComponent} from "./component/category-events/category-events.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     EventsComponent,
     TopBarComponent,
-    SearchComponent
+    SearchComponent,
+    CategoryEventsComponent,
   ],
   imports: [
     BrowserModule,
