@@ -11,4 +11,5 @@ export interface Event {
   poster: string; // poster of the event
   capacity: number; // number of tickets
   category: Category;
+  genre: string;
 }
