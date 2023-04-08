@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Route, RouterModule, Routes} from "@angular/router";
 import {EventsComponent} from "./component/events/events.component";
+import { TopBarComponent } from './component/top-bar/top-bar.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'ticketopia.kz', pathMatch: 'full'},
-  {path: 'ticketopia.kz', component: EventsComponent}
+  {path: 'ticketopia.kz', component: EventsComponent},
 ];
 
 

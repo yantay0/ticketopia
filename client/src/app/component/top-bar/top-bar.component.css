@@ -1,0 +1,18 @@
+.top-bar {
+    display: flex;
+    margin-left: 100px;
+}
+
+.account {
+    margin-left: 230px;
+    padding-top: 40px;
+    display: flex;
+}
+
+.acc {
+    color: black;
+    font-size: 8px;
+    text-decoration: none;
+    padding-top: 9px;
+    padding-left: 5px;
+}
