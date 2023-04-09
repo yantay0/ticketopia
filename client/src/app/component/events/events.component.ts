@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {categories} from "../../TempDB";
 import {events} from "../../TempDB";
 import {Category} from "../../model/Category";
+import {Router} from "@angular/router";
+import {DOMAIN} from "../../config";
 
 
 @Component({
@@ -9,25 +11,22 @@ import {Category} from "../../model/Category";
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.css']
 })
-export class EventsComponent implements OnInit {
+export class EventsComponent {
+
   categories = categories;
   selectedCategory: Category;
-  ngOnInit(): void {
+  // ngOnInit(): void {
+  //
+  // }
 
-  }
-
-  constructor() {
+  constructor(private router: Router) {
     this.selectedCategory = categories[0];
   }
-
-
-  displayEventsByCategory(){
-
+  onSelect(category: Category) {
+    this.selectedCategory = category;
+    if(category.id == 1) this.router.navigate([DOMAIN]);
+    else this.router.navigate([`${DOMAIN}/${category.name.toLowerCase()}`])
   }
 
-  selectCategory(category: Category) {
-    this.categories.forEach(c => c.selected = false)
-    category.selected = true;
-  }
 
 }
