@@ -1,9 +1,5 @@
-
 <div class="categories">
-  <a class="category-button" *ngFor="let category of categories" (click)="onSelect(category)">
-    <button class="category">
-      <img class="category-image" src="assets/{{category.image}}" alt="{{category.name}}">
-      <h2 class="category-title">{{category.name}}</h2>
-    </button>
+  <a class="category" *ngFor="let category of categories" (click)="onSelect(category)">
+    <p class="category-title">{{category.name}}</p>
   </a>
 </div>
