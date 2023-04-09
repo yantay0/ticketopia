@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import {Route, RouterModule, Routes} from "@angular/router";
 import {EventsComponent} from "./component/events/events.component";
 import {CategoryEventsComponent} from "./component/category-events/category-events.component";
+import {NotFoundComponent} from "./component/not-found/not-found.component";
+import {DOMAIN} from "./config";
 
 const routes: Routes = [
-  {path: '', redirectTo: 'ticketopia.kz', pathMatch: 'full'},
-  // {path: 'ticketopia.kz', component: CategoryEventsComponent},
-  {path: ':category', component: CategoryEventsComponent},
-  // { path: '**', redirectTo: '' }
+  {path: '', redirectTo: DOMAIN, pathMatch: 'full'},
+  {path: DOMAIN,component: CategoryEventsComponent},
+  {path: `${DOMAIN}/:category`, component: CategoryEventsComponent},
+  {path: '**', component: NotFoundComponent }
 ];
 
 
