@@ -15,14 +15,16 @@
 }
 
 .signin-btn {
-  padding: 10px 20px;
-  /*background-color: #333;*/
-  background-color: yellowgreen;
-  color: white;
-  border: none;
+  margin-left: 10px;
+  padding: 5px;
+  background: orange;
+  color: black;
+  font-weight: bold;
+  /*border: none;*/
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
+  border: 2px orange ;
 }
 
 .signin-btn:hover {
