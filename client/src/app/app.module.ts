@@ -10,6 +10,8 @@ import {NgOptimizedImage} from "@angular/common";
 import { TopBarComponent } from './component/top-bar/top-bar.component';
 import { SearchComponent } from './component/search/search.component';
 import {CategoryEventsComponent} from "./component/category-events/category-events.component";
+import { NotFoundComponent } from './component/not-found/not-found.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import {CategoryEventsComponent} from "./component/category-events/category-even
     TopBarComponent,
     SearchComponent,
     CategoryEventsComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     RouterOutlet,
     AppRoutingModule,
     HttpClientModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

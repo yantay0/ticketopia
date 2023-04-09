@@ -8,5 +8,4 @@ import {DOMAIN} from "./config";
 })
 export class AppComponent {
   title = 'client';
-  domain = DOMAIN;get
 }
