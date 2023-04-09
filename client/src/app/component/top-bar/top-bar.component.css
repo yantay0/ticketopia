@@ -4,6 +4,7 @@
 }
 .logo img {
   max-height: 100px;
+  cursor: pointer;
 }
 
 
