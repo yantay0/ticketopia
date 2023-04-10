@@ -12,6 +12,9 @@ import { SearchComponent } from './component/search/search.component';
 import {CategoryEventsComponent} from "./component/category-events/category-events.component";
 import { NotFoundComponent } from './component/not-found/not-found.component';
 import {FormsModule} from "@angular/forms";
+import { LoginComponent } from './component/login/login.component';
+import { SignupComponent } from './component/signup/signup.component';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +24,10 @@ import {FormsModule} from "@angular/forms";
     SearchComponent,
     CategoryEventsComponent,
     NotFoundComponent,
+    LoginComponent,
+    SignupComponent,
+
+   
   ],
   imports: [
     BrowserModule,
