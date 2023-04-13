@@ -74,10 +74,10 @@ class Event(models.Model):
             'description': self.description,
             'premiere_date': self.premiere_date,
             'age_rating': self.age_rating,
-            'location': self.location,
+            # 'location': self.location,
             'poster': self.poster,
             'quantity': self.quantity,
-            'category': self.category,
+            'category': self.category.to_json(),
             'genre': self.genre
         }
 
