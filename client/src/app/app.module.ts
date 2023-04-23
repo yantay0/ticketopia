@@ -14,6 +14,7 @@ import { NotFoundComponent } from './component/not-found/not-found.component';
 import {FormsModule} from "@angular/forms";
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
+import { EventDetailsComponent } from './component/event-details/event-details.component';
 
 
 @NgModule({
@@ -26,8 +27,9 @@ import { SignupComponent } from './component/signup/signup.component';
     NotFoundComponent,
     LoginComponent,
     SignupComponent,
+    EventDetailsComponent,
 
-   
+
   ],
   imports: [
     BrowserModule,
