@@ -81,27 +81,3 @@ class Event(models.Model):
             'genre': self.genre
         }
 
-
-class Ticket(models.Model):
-    event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name="tickets")
-    row = models.CharField(max_length=10)
-    seat = models.IntegerField()
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    ticket_type = models.CharField(max_length=255)
-
-    class Meta:
-        verbose_name = 'Ticket'
-        verbose_name_plural = 'Tickets'
-
-    def __str__(self):
-        return f'{self.id} : {self.event} :  {self.row} : {self.seat} :{self.price} : {self.ticket_type}'
-
-    def to_json(self):
-        return {
-            'id': self.id,
-            'event': self.event,
-            'row': self.row,
-            'seat': self.seat,
-            'price': self.price,
-            'ticket_type': self.ticket_type
-        }

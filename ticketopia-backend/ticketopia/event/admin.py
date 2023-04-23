@@ -1,5 +1,6 @@
 from django.contrib import admin
-from event.models import *
+from api.event.models import *
+from api.ticket.models import Ticket
 
 
 @admin.register(Category)
