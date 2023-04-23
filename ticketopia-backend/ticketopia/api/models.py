@@ -2,9 +2,9 @@ from django.db import models
 
 
 class Category(models.Model):
-    MOVIES = 'movie'
-    CONCERTS = 'concerts'
-    THEATRE = 'theatre'
+    MOVIES = 'Movie'
+    CONCERTS = 'Concerts'
+    THEATRE = 'Theatre'
 
     CATEGORY_CHOICES = (
         (MOVIES, 'Movies'),
@@ -55,7 +55,7 @@ class Event(models.Model):
     age_rating = models.CharField(max_length=3)
     location = models.ManyToManyField(Location)
     duration = models.IntegerField(default=0)
-    poster = models.URLField(max_length=200, null=True, blank=True, verbose_name='Poster URL')
+    poster = models.CharField(max_length=255, null=True, blank=True, verbose_name='Poster URL')
     quantity = models.IntegerField(default=0)
     category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name="events")
     genre = models.CharField(max_length=255)

@@ -1,5 +1,6 @@
-from event.models import *
 from rest_framework import serializers
+
+from api.models import Event, Location
 
 
 class CategorySerializer(serializers.Serializer):
