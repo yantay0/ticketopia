@@ -1,9 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {categories, events, events as allEvents} from "../../TempDB";
 import {Category} from "../../model/Category";
 import {Event} from "../../model/Event";
 import {ActivatedRoute} from "@angular/router";
-import {DOMAIN} from "../../config";
+import {CategoryService} from "../../service/category.service";
+
 
 @Component({
   selector: 'app-category-events',
@@ -11,25 +11,43 @@ import {DOMAIN} from "../../config";
   styleUrls: ['./category-events.component.css']
 })
 export class CategoryEventsComponent implements OnInit{
-  private selectedCategory?: Category = categories[0];
-  filteredEvents?: Event [];
+  categories: Category[] = []
+  private selectedCategory: Category;
+  filteredEvents: Event [] = [];
+
+
+  constructor(private categoryService: CategoryService, private route: ActivatedRoute) {
+    this.selectedCategory = {} as Category
+  }
 
   ngOnInit(): void {
+    this.getCategories();
     this.route.paramMap.subscribe(params => {
       const selectedCategoryName = params.get('category');
-      const selectedCategory = selectedCategoryName ?  categories
-        .find(c => c.name.toLowerCase() === selectedCategoryName.toLowerCase()) : categories[0];
-      this.selectedCategory = selectedCategory;
+      const selectedCategory = selectedCategoryName ? this.categories
+        .find(c => c.name.toLowerCase() === selectedCategoryName.toLowerCase()) : this.categories[0];
+      if(selectedCategory)
+        this.selectedCategory = selectedCategory;
       if (selectedCategory) {
         this.selectedCategory = selectedCategory;
-        this.filterByCategory(selectedCategory.id);
+        this.getEventsByCategory(selectedCategory.id);
       }
     });
   }
-  constructor(private route: ActivatedRoute) {}
 
-  filterByCategory(categoryId: number){
-    this.filteredEvents = events.filter(e => e.category.id === categoryId);
+  getCategories(){
+    this.categoryService.getCategories().subscribe((data: Category[])=>{
+      this.categories = data;
+      this.selectedCategory = data[0];
+    })
   }
+
+  getEventsByCategory(categoryId: number){
+    this.categoryService.getEventsByCategory(categoryId).subscribe((data: Event[])=>{
+      this.filteredEvents = data;
+      console.log(data)
+    })
+  }
+
 
 }
