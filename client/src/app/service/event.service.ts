@@ -6,20 +6,18 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class EventService {
+  items: Event[] = [];
   constructor(private client: HttpClient) {
   }
 
   BASE_URL = 'http://127.0.0.1:8000';
 
-  getEvents(): Observable<Event[]> {
-    return this.client.get<Event[]>(`${this.BASE_URL}/events/`);
-  }
-
   getEventDetail(id: string): Observable<Event> {
     return this.client.get<Event>(`${this.BASE_URL}/events/${id}/`);
   }
 
-  getEventByCategoryId(id: any): Observable<Event[]> {
-    return this.client.get<Event[]>(`${this.BASE_URL}/categories/${id}/`);
+  addToCart(event: Event) {
+    this.items.push(event);
   }
+
 }

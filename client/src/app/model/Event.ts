@@ -2,6 +2,7 @@ import {Category} from "./Category";
 import {Location} from "./Location";
 
 export interface Event {
+  id: number;
   name: string;
   description: string;
   premiereDate: Date;

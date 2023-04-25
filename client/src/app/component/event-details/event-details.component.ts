@@ -24,12 +24,17 @@ export class EventDetailsComponent {
   getEvent(): void {
     this.route.paramMap.subscribe((params) => {
       const id = params.get('id');
-        if (id !== null) {
-          this.eventService.getEventDetail(id).subscribe((data) => {
-            this.event = data;
-          });
-        }
+      if (id !== null) {
+        this.eventService.getEventDetail(id).subscribe((data) => {
+          this.event = data;
+        });
+      }
     });
+  }
+
+  addToCart(event: Event) {
+    this.eventService.addToCart(event);
+    window.alert('Your product has been added to the cart!');
   }
 
   // onClick(): void {
@@ -46,8 +51,5 @@ export class EventDetailsComponent {
   //   window.alert(`The event ${this.event.name} has been shared!`);
   //   window.open(`https://t.me/share/url?url=http://localhost:4200/events/${this.event.id}&text=Share it!`);
   // }
-
-
-
 
 }

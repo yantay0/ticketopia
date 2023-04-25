@@ -1,17 +1,13 @@
-<div class = "main-body" *ngIf="event">
-  <div class="event-detail-container">
+<h2>Event Details</h2>
 
-    <div class="event-poster">
-      <img src="../../../assets/{{event.poster}}" alt="event image" width="500" height="500">
-    </div>
-
-    <div class="event-detail">
-      <h1>{{event.name}}</h1>
-      <div class="short-info">
-        <div class="rate"><span>Rate: <strong>{{event.rate}}</strong></span>
-        </div>
-        <div class="duration"><span>Genre: <strong>{{event.genre}}</strong></span></div>
-      </div>
-    </div>
-  </div>
+<div *ngIf="event">
+  <h3>
+     {{ event.name }}
+  </h3>
+  <img src="assets/{{event.poster}}" alt="{{event.name}}" class="event-card__poster">
+  <h4>{{ event.price | currency }}</h4>
+  <p>{{ event.description }}</p>
+  <button type="button" (click)="addToCart(event)"> Buy </button>
 </div>
+
+
