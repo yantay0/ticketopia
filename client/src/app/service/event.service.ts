@@ -7,12 +7,17 @@ import {Event} from "../model/Event";
   providedIn: 'root'
 })
 export class EventService {
-  BASE_URL = 'http://127.0.0.1:8000'
-  constructor(private client: HttpClient) { }
 
-  getAllEvents():Observable<Event[]>{
+  BASE_URL = 'http://127.0.0.1:8000';
+
+  constructor(private client: HttpClient) {
+  }
+
+  getAllEvents(): Observable<Event[]> {
     return this.client.get<Event[]>(
       `${this.BASE_URL}/api/events`
     )
   }
 }
+
+

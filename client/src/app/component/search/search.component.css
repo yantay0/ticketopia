@@ -9,6 +9,20 @@
   margin: 20px;
 }
 
+.img{
+    margin-bottom: 30px;
+    margin-top: 2px;
+}
+.input{
+    width: 270px;
+    height: 18px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 1px solid rgb(195, 195, 195);
+    font-size: 15px;
+    margin-top: 5px;
+}
+
 .input {
   flex-grow: 1;
   border: none;
