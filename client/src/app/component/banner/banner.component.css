@@ -1,0 +1,12 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #f5f5f5;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+}
