@@ -15,8 +15,6 @@ import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { EventFilterComponent } from './component/events/event-filter/event-filter.component';
 import { BannerComponent } from './component/banner/banner.component';
-import { EventDetailsComponent } from './component/event-details/event-details.component';
-
 
 @NgModule({
   declarations: [
@@ -29,8 +27,6 @@ import { EventDetailsComponent } from './component/event-details/event-details.c
     SignupComponent,
     EventFilterComponent,
     BannerComponent,
-    EventDetailsComponent,
-
 
   ],
   imports: [
