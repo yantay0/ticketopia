@@ -1,15 +1,15 @@
 import {Category} from "./Category";
+import {Location} from "./Location";
 
 export interface Event {
-  id: number;
-  title: string;
-  description: Text | string;
-  premiereDate: Date | string;
+  name: string;
+  description: string;
+  premiereDate: Date;
   ageRating: string;
-  location: string;
-  duration: number; // in minutes
-  poster: string; // poster of the event
-  capacity: number; // number of tickets
+  location: Location[];
+  duration: number;
+  poster?: string | null;
+  quantity: number;
   category: Category;
   genre: string;
 }

@@ -1,9 +1,18 @@
-
-<div class="categories">
-  <a class="category-button" *ngFor="let category of categories" (click)="onSelect(category)">
-    <button class="category">
-      <img class="category-image" src="assets/{{category.image}}" alt="{{category.name}}">
-      <h2 class="category-title">{{category.name}}</h2>
-    </button>
-  </a>
+<div class="row">
+  <div class="col-3">
+    <app-event-filter [category]="category.name"></app-event-filter>
+  </div>
 </div>
+
+<div *ngIf="filteredEvents.length > 0" class="event-grid">
+  <div *ngFor="let event of filteredEvents" class="event-card">
+    <img src="assets/{{event.poster}}" alt="{{event.name}}" class="event-card__poster">
+    <h3 class="event-card__title">{{event.name}}</h3>
+    <p class="event-card__location">{{event.location}}</p>
+    <p class="event-card__date">{{event.premiereDate | date:'longDate'}}</p>
+  </div>
+</div>
+<div class="event-card" *ngIf="filteredEvents.length===0">
+  <h1>No events</h1>
+</div>
+<!--<h1 *ngIf="categoryName">{{categoryName}}</h1>-->
