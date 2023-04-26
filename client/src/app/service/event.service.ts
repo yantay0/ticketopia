@@ -18,6 +18,11 @@ export class EventService {
       `${this.BASE_URL}/api/events`
     )
   }
+
+  getEventDetail(id: number): Observable<Event> {
+    return this.client.get<Event>(`${this.BASE_URL}/api/events/${id}`);
+  }
+
 }
 
 
