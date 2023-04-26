@@ -33,6 +33,13 @@ def event_detail(request, event_id):
     try:
         event = Category.objects.get(id=event_id)
     except Category.DoesNotExist as e:
+=======
+
+@api_view(['GET', 'PUT', 'DELETE'])
+def event_detail(request, event_id):
+    try:
+        event = Event.objects.get(id=event_id)
+    except Event.DoesNotExist as e:
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
     if request.method == 'GET':
