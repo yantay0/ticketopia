@@ -17,8 +17,9 @@ import { SignupComponent } from './component/signup/signup.component';
 import { EventFilterComponent } from './component/events/event-filter/event-filter.component';
 import { BannerComponent } from './component/banner/banner.component';
 import { UserComponent } from './user/user.component';
-import { AdminComponent } from './admin/admin.component'
-
+import { AdminComponent } from './admin/admin.component';
+import { UserInformationComponent } from './component/user-information/user-information.component'
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AdminComponent } from './admin/admin.component'
     SignupComponent,
     BannerComponent,
     EventFilterComponent,
+    UserInformationComponent,
 
   ],
   imports: [
@@ -41,7 +43,7 @@ import { AdminComponent } from './admin/admin.component'
     NgOptimizedImage,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
