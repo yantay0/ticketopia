@@ -1,6 +1,6 @@
-import {Seat} from "./Seat";
-import {TicketType} from "./TicketType";
-import {User} from "./User";
+import {User} from "./user";
+import {Seat} from "./seat";
+import {TicketType} from "./ticket-type";
 
 export interface Ticket {
   user: User;
