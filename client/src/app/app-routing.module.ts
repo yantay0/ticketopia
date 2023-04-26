@@ -14,10 +14,15 @@ const routes: Routes = [
   {path: `${DOMAIN}/:category`, component: EventsComponent},
   {path: 'login', component:LoginComponent},
   {path: 'signup', component:SignupComponent},
+<<<<<<< HEAD
   // {path: ':category/events/:eventId', component: EventDetailsComponent },
   {path: `${DOMAIN}/:category/events/:id`, component: EventDetailsComponent },
 
   {path: '**', component: NotFoundComponent }
+=======
+  {path: '**', component: NotFoundComponent },
+  {path: 'events/:eventsId', component: EventDetailsComponent },
+>>>>>>> 19d2bc383e3f82e517204bea0709e0310542dcf2
 ];
 
 
