@@ -3,6 +3,7 @@ import { Category } from "../../model/Category";
 import { ActivatedRoute } from "@angular/router";
 import { EventService } from "../../service/event.service";
 import { Event } from "../../model/Event";
+import {DOMAIN} from "../../config";
 
 @Component({
   selector: 'app-events',
@@ -10,7 +11,7 @@ import { Event } from "../../model/Event";
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent implements OnInit {
-
+  event: any;
   events: Event[] = [];
   category: Category;
   filteredEvents: Event[] = [];
@@ -40,4 +41,17 @@ export class EventsComponent implements OnInit {
     console.log(this.filteredEvents);
     console.log(this.category)
   }
+
+  getEvent(): void {
+    this.route.paramMap.subscribe((params) => {
+      const id = params.get('id');
+      if (id !== null) {
+        this.eventService.getEventDetail(+id).subscribe((data) => {
+          this.event = data;
+        });
+      }
+    });
+  }
+
+  protected readonly DOMAIN = DOMAIN;
 }

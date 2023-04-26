@@ -1,0 +1,29 @@
+<h2>Event Details</h2>
+
+<<<<<<< HEAD
+    <div class="event-poster">
+      <img src="assets/{{event.poster}}" alt="event poster" width="500" height="500">
+    </div>
+
+    <div class="event-detail">
+      <h1>{{event.name}}</h1>
+      <div class="short-info">
+        <div class="rate"><span>Description: <strong>{{event.description}}</strong></span>
+        </div>
+        <div class="duration"><span>Duration: <strong>{{event.duration}}</strong></span></div>
+      </div>
+    </div>
+  </div>
+=======
+<div *ngIf="event">
+  <h3>
+     {{ event.name }}
+  </h3>
+  <img src="assets/{{event.poster}}" alt="{{event.name}}" class="event-card__poster">
+  <h4>{{ event.price | currency }}</h4>
+  <p>{{ event.description }}</p>
+  <button type="button" (click)="addToCart(event)"> Buy </button>
+>>>>>>> 19d2bc383e3f82e517204bea0709e0310542dcf2
+</div>
+
+
