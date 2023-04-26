@@ -29,11 +29,6 @@ def event_list_by_category(request, category_id):
     serializer = EventSerializer(events, many=True)
     return Response(serializer.data)
 
-def event_detail(request, event_id):
-    try:
-        event = Category.objects.get(id=event_id)
-    except Category.DoesNotExist as e:
-=======
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def event_detail(request, event_id):
