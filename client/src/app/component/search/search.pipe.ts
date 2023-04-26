@@ -5,13 +5,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 
 export class SearchPipe implements PipeTransform {
-  transform(languages: string[], searchInput: string): any[]{
+  transform(events: string[], searchInput: string): any[]{
     if(!searchInput) {
       return  [];
     }
 
     searchInput = searchInput.toLowerCase();
-    return languages.filter(
+    return events.filter(
       x =>x.toLowerCase().includes(searchInput)
     )
   }

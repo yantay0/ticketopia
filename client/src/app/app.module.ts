@@ -18,6 +18,7 @@ import { EventFilterComponent } from './component/events/event-filter/event-filt
 import { BannerComponent } from './component/banner/banner.component';
 import { UserComponent } from './user/user.component';
 import { AdminComponent } from './admin/admin.component'
+import {SearchPipe} from "./component/search/search.pipe";
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import { AdminComponent } from './admin/admin.component'
     SignupComponent,
     BannerComponent,
     EventFilterComponent,
-
+    SearchPipe,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +40,7 @@ import { AdminComponent } from './admin/admin.component'
     AppRoutingModule,
     HttpClientModule,
     NgOptimizedImage,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
