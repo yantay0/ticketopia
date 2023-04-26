@@ -1,8 +1,14 @@
-<div class="logo">
-    <img src="../../../assets/logo.png">
-</div>
 
+<div class="top-bar">
+  <div class="logo" (click)="goToMainPage()">
+    <img src="../../../assets/logo.png" width="200">
+  </div>
 
-<div class="account">
-    <a href=""> <img src="../../../assets/account.png"> </a>
+  <app-search></app-search>
+
+  <div class="account">
+    <button class="signin-btn" (click)="signIn()" routerLink="/login">
+      Sign in
+    </button>
+  </div>
 </div>

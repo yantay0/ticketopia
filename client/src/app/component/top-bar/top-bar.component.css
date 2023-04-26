@@ -1,0 +1,23 @@
+.top-bar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  margin-bottom: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+}
+

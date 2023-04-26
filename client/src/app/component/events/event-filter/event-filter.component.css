@@ -1,0 +1,30 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 20px;
+  margin:50px;
+}
+.category{
+  text-decoration: none;
+}
+
+.category:hover {
+  /*text-decoration: underline;*/
+  cursor: pointer;
+}
+
+.category-title {
+  /*font-weight: bold;*/
+  text-align: center;
+}
+/* CSS style for the selected category */
+.category-selected {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+a {
+  color: black;
+}
