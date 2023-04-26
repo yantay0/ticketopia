@@ -19,6 +19,7 @@ import { BannerComponent } from './component/banner/banner.component';
 import { UserComponent } from './user/user.component';
 import { AdminComponent } from './admin/admin.component'
 import {SearchPipe} from "./component/search/search.pipe";
+import { EventDetailComponent } from './component/event-detail/event-detail.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import {SearchPipe} from "./component/search/search.pipe";
     BannerComponent,
     EventFilterComponent,
     SearchPipe,
+    EventDetailComponent,
   ],
   imports: [
     BrowserModule,

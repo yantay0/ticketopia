@@ -3,6 +3,7 @@ import { Category } from "../../model/Category";
 import { ActivatedRoute } from "@angular/router";
 import { EventService } from "../../service/event.service";
 import { Event } from "../../model/Event";
+import {DOMAIN} from "../../config";
 
 @Component({
   selector: 'app-events',
@@ -40,4 +41,6 @@ export class EventsComponent implements OnInit {
     console.log(this.filteredEvents);
     console.log(this.category)
   }
+
+  protected readonly DOMAIN = DOMAIN;
 }
