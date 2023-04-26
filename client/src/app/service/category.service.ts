@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Category} from "../model/Category";
 import {Event} from "../model/Event";
+import {AuthToken} from "../model/auth-token";
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +13,12 @@ export class CategoryService {
   BASE_URL = 'http://127.0.0.1:8000'
   constructor(private client: HttpClient) { }
 
+  login(username: string, password: string): Observable<AuthToken> {
+    return this.client.post<AuthToken>(
+      `${this.BASE_URL}/api/login/`,
+      {username, password}
+    )
+  }
   getCategories():Observable<Category[]>{
     return this.client.get<Category[]>(
       `${this.BASE_URL}/api/categories`

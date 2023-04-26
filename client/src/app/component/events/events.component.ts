@@ -1,9 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Category} from "../../model/Category";
 import {ActivatedRoute} from "@angular/router";
 import {EventService} from "../../service/event.service";
 import {Event} from "../../model/Event";
 import {DOMAIN} from "../../config";
+import {CategoryService} from "../../service/category.service";
 
 @Component({
   selector: 'app-events',
@@ -15,8 +16,10 @@ export class EventsComponent implements OnInit {
   events: Event[] = [];
   category: Category;
   filteredEvents: Event[] = [];
+  // @Input() isLogged: boolean = false;
+  logged: boolean = false;
 
-  constructor(private route: ActivatedRoute, private eventService: EventService) {
+  constructor(private route: ActivatedRoute, private eventService: EventService, private categoryService :CategoryService) {
     this.category = {} as Category
   }
 
@@ -43,4 +46,11 @@ export class EventsComponent implements OnInit {
     console.log(this.category)
   }
 
+  onToggle($event: boolean) {
+    this.logged = true;
+  }
+  logOut() {
+    localStorage.removeItem('token');
+    this.logged = false;
+  }
 }

@@ -1,4 +1,4 @@
-import {Ticket} from "./Ticket";
+import {Ticket} from "./ticket";
 
 export interface User {
   id: number;

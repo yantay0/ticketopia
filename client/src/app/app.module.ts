@@ -5,7 +5,7 @@ import {AppComponent} from './app.component';
 import {RouterOutlet} from "@angular/router";
 import {EventsComponent} from './component/events/events.component';
 import {AppRoutingModule} from './app-routing.module';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {NgOptimizedImage} from "@angular/common";
 import {TopBarComponent} from './component/top-bar/top-bar.component';
 import {SearchComponent} from './component/search/search.component';
@@ -17,6 +17,7 @@ import {EventFilterComponent} from './component/events/event-filter/event-filter
 import {BannerComponent} from './component/banner/banner.component';
 import {SearchPipe} from "./component/search/search.pipe";
 import {EventDetailComponent} from './component/event-detail/event-detail.component';
+import {AuthInterceptor} from "./auth-intercepter";
 
 
 @NgModule({
@@ -41,7 +42,13 @@ import {EventDetailComponent} from './component/event-detail/event-detail.compon
     NgOptimizedImage,
     FormsModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
