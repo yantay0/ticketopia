@@ -5,5 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  constructor() { }
+  private currentUser: any = {
+    name: 'John Doe',
+    email: 'johndoe@example.com',
+  };
+
+  getCurrentUser() {
+    return this.currentUser;
+  }
 }
