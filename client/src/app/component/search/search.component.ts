@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
+  searchTerm: string = '';
+  search() {
 
+  }
 }
