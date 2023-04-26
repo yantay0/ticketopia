@@ -1,1 +1,30 @@
-<p>event-detail works!</p>
+<div class="about-event">
+  <div class="event-poster">
+    <h1>{{event.name}}</h1>
+    <img src="assets/posters/{{event.poster}}" alt="event poster" width="300" >
+  </div>
+
+  <div class="event-detail">
+
+    <div class="short-info">
+      <div class="desc">
+        <span> <strong> Description: </strong> {{event.description}}</span>
+      </div>
+      <br>
+      <div class="date">
+        <span> <strong> Premiere Date: </strong> {{event.premiereDate}}</span>
+      </div>
+      <br>
+      <div class="date">
+        <span> <strong> Location: </strong> {{event.location}}</span>
+    </div>
+      <div class="duration">
+        <span>Duration: <strong>{{event.duration}}</strong></span>
+      </div>
+    </div>
+    <div class="ticket">
+      <button> Buy ticket</button>
+    </div>
+
+  </div>
+</div>
