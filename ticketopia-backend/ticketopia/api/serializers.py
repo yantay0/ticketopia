@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from api.models import Event, Location
+from api.models import Event, Location, Category
 
 
 class CategorySerializer(serializers.Serializer):
@@ -15,15 +15,6 @@ class CategorySerializer(serializers.Serializer):
         instance.name = validated_data.get('name', instance.name)
         instance.save()
         return instance
-
-
-class EventSerializer(serializers.ModelSerializer):
-    category = CategorySerializer()
-
-    class Meta:
-        model = Event
-        fields = '__all__'
-        read_only_fields = ['id', 'category']
 
 
 class LocationSerializer(serializers.Serializer):
@@ -42,3 +33,13 @@ class LocationSerializer(serializers.Serializer):
         instance.address = validated_data.get('address', instance.address)
         instance.save()
         return instance
+
+
+class EventSerializer(serializers.ModelSerializer):
+    category = CategorySerializer()
+    location = LocationSerializer()
+
+    class Meta:
+        model = Event
+        fields = '__all__'
+        read_only_fields = ['id', 'category']
