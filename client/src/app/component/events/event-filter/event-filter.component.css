@@ -17,9 +17,8 @@
 }
 
 .category-title {
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-align: center;
-
 }
 /* CSS style for the selected category */
 .category-selected {

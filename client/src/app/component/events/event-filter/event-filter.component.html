@@ -1,9 +1,9 @@
 <div class="categories">
-  <a class="category category-title" (click)="changeCategoryColor('All events')"
-     [class.category-selected]="selectedCategory === 'All events'" routerLink="/{{DOMAIN}}">All events</a>
+  <a class="category category-title" (click)="changeCategory('All events')"
+     [class.category-selected]="selectedCategory === 'All events'" routerLink="/{{DOMAIN}}/">All events</a>
   <a class="category" *ngFor="let category of categories"
-     (click)="changeCategoryColor(category.name)"
-     [class.category-selected]="selectedCategory === category.name" routerLink="/{{DOMAIN}}/{{category.name.toLowerCase()}}">
+     (click)="changeCategory(category.name)"
+     [class.category-selected]="selectedCategory === category.name.toLowerCase()" routerLink="/{{DOMAIN}}/{{category.name.toLowerCase()}}">
     <p class="category-title">{{category.name}}</p>
   </a>
 </div>
