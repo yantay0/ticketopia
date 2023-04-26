@@ -1,13 +1,20 @@
 .top-bar {
-    display: flex;
-    margin-left: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  margin-left: 100px;
 }
-.logo img {
-  margin-top:15px;
-  width: 200px;
+
+.logo {
   cursor: pointer;
 }
 
+.logo img {
+  margin-bottom: 10px;
+  width: 200px;
+  cursor: pointer;
+}
 
 .account {
   display: flex;
@@ -15,31 +22,18 @@
 }
 
 .signin-btn {
-  margin-left: 10px;
-  padding: 5px;
-  background: orange;
-  color: black;
+  background: #ff9800;
+  color: #fff;
   font-weight: bold;
-  /*border: none;*/
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 14px;
   cursor: pointer;
-  border: 2px orange ;
+  border: none;
+  margin-left: 5px;
+  padding: 8px 12px;
 }
 
 .signin-btn:hover {
-  text-decoration: underline;
-}
-.banner {
-
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f5f5;
-}
-
-.banner img {
-  max-width: 100%;
-  max-height: 100%;
+  background: #ff5722; /* Change background color on hover */
+  text-decoration: none;
 }
