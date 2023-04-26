@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import {DOMAIN} from "./config";
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',

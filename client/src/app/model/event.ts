@@ -7,7 +7,7 @@ export interface Event {
   description: string;
   premiereDate: Date;
   ageRating: string;
-  location: Location[];
+  location: Location;
   duration: number;
   poster?: string | null;
   quantity: number;

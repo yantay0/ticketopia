@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import {Route, RouterModule, Routes} from "@angular/router";
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from "@angular/router";
 import {EventsComponent} from "./component/events/events.component";
 import {NotFoundComponent} from "./component/not-found/not-found.component";
 import {DOMAIN} from "./config";
-import { LoginComponent } from './component/login/login.component';
-import { SignupComponent } from './component/signup/signup.component';
+import {LoginComponent} from './component/login/login.component';
+import {SignupComponent} from './component/signup/signup.component';
 import {EventDetailComponent} from "./component/event-detail/event-detail.component";
 
 const routes: Routes = [
