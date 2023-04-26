@@ -1,8 +1,9 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CategoryService} from "../../../service/category.service";
 import {Category} from "../../../model/Category";
 import {ActivatedRoute, Router} from "@angular/router";
 import {DOMAIN} from "../../../config";
+
 // import * as DOMAIN from "domain";
 
 @Component({

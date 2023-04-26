@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { Category } from "../../model/Category";
-import { ActivatedRoute } from "@angular/router";
-import { EventService } from "../../service/event.service";
-import { Event } from "../../model/Event";
+import {Component, OnInit} from '@angular/core';
+import {Category} from "../../model/Category";
+import {ActivatedRoute} from "@angular/router";
+import {EventService} from "../../service/event.service";
+import {Event} from "../../model/Event";
 import {DOMAIN} from "../../config";
 
 @Component({
@@ -23,6 +23,7 @@ export class EventsComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.category.name = <string>params.get('category');
+      console.log(this.category.name)
       this.allEvents();
     });
   }
@@ -42,5 +43,4 @@ export class EventsComponent implements OnInit {
     console.log(this.category)
   }
 
-  protected readonly DOMAIN = DOMAIN;
 }

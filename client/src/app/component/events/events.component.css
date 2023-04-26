@@ -2,9 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  /*margin: 50px;*/
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 100px 0 100px;
+  font-size: 12px;
 }
 
 a {
@@ -21,8 +20,8 @@ a {
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 250px;
 }
 
 .event-card:hover {
@@ -41,4 +40,7 @@ a {
 .no-events {
   text-align: center;
   margin-top: 50px;
+}
+img {
+  width: 100%;
 }
