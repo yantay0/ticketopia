@@ -29,6 +29,8 @@ export class EventsComponent implements OnInit {
   private allEvents() {
     this.eventService.getAllEvents().subscribe(events => {
       this.events = events;
+      this.filteredEvents = events
+      if(this.category.name)
       this.applyFilter();
     });
   }
