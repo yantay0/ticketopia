@@ -55,7 +55,7 @@ class Event(models.Model):
     age_rating = models.CharField(max_length=3)
     location = models.ForeignKey(Location, on_delete=models.CASCADE, null=True)
     duration = models.IntegerField(default=0)
-    poster = models.CharField(max_length=255, null=True, blank=True, verbose_name='Poster URL')
+    poster = models.CharField(max_length=255, null=True, default="soon.png", verbose_name='Poster URL')
     quantity = models.IntegerField(default=0)
     category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name="events")
     genre = models.CharField(max_length=255, null=True)
