@@ -36,7 +36,7 @@ export class EventsComponent implements OnInit {
       this.events = events;
       this.filteredEvents = events
       if(this.category.name)
-      this.applyFilter();
+        this.applyFilter();
     });
   }
 
