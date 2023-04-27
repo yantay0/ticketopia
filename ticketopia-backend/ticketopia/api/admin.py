@@ -7,7 +7,7 @@ from api.models import Location, Event, Category
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name')
+    list_display = ('id', 'name', 'user')
 
 
 @admin.register(Event)

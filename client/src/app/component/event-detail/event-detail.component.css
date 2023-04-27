@@ -1,0 +1,16 @@
+.event-detail , .event-poster{
+  margin-left: 100px;
+}
+
+.about-event {
+  display: flex;
+}
+
+.event-detail{
+  margin-top: 200px;
+  padding-right: 100px;
+}
+
+.ticket {
+  margin-top: 50px;
+}

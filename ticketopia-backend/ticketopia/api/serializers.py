@@ -1,11 +1,27 @@
+from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
 from api.models import Event, Location, Category
 
 
+class JwtTokenObtainPairSerializer:
+    pass
+
+
+class TokenObtainPairSerializer(JwtTokenObtainPairSerializer):
+    username_field = get_user_model().USERNAME_FIELD
+
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = get_user_model()
+        fields = ('email', 'password')
+
+
 class CategorySerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField()
+    user = serializers.IntegerField()
 
     def create(self, validated_data):
         category = Category.objects.create(**validated_data)
