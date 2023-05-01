@@ -15,7 +15,7 @@ export class CategoryService {
 
   login(email: string, password: string): Observable<AuthToken> {
     return this.client.post<AuthToken>(
-      `${this.BASE_URL}/api/login/`,
+      `${this.BASE_URL}/api/user/login/`,
       {email, password}
     )
   }
