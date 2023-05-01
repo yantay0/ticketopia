@@ -21,7 +21,6 @@ class UserSerializer(serializers.ModelSerializer):
 class CategorySerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField()
-    user = serializers.IntegerField()
 
     def create(self, validated_data):
         category = Category.objects.create(**validated_data)
