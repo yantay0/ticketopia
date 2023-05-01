@@ -13,20 +13,20 @@ export class CategoryService {
   BASE_URL = 'http://127.0.0.1:8000'
   constructor(private client: HttpClient) { }
 
-  login(username: string, password: string): Observable<AuthToken> {
+  login(email: string, password: string): Observable<AuthToken> {
     return this.client.post<AuthToken>(
       `${this.BASE_URL}/api/login/`,
-      {username, password}
+      {email, password}
     )
   }
   getCategories():Observable<Category[]>{
     return this.client.get<Category[]>(
-      `${this.BASE_URL}/api/categories`
+      `${this.BASE_URL}/api/categories/`
     );
   }
   getEventsByCategory(categoryId:number): Observable<Event[]> {
     return this.client.get<Event[]>(
-      `${this.BASE_URL}/api/categories/${categoryId}/events`
+      `${this.BASE_URL}/api/categories/${categoryId}/events/`
     );
   }
 
