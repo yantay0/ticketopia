@@ -9,7 +9,7 @@ import {DOMAIN} from "../../config";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{
-  username: string = ''
+  email: string = ''
   password: string = ''
   @Output() isLogged: EventEmitter<boolean> = new EventEmitter<boolean>();
   constructor(private categoryService: CategoryService, private router: Router) {}
@@ -23,12 +23,12 @@ export class LoginComponent implements OnInit{
   }
 
   login() {
-    this.categoryService.login(this.username, this.password).subscribe((data) =>{
+    this.categoryService.login(this.email, this.password).subscribe((data) =>{
       localStorage.setItem('token', data.token);
       this.router.navigate([`${DOMAIN}`])
       this.isLogged.emit(true);
       this.isLogged.emit(false);
-      this.username = ''
+      this.email = ''
       this.password = ''
     });
   }

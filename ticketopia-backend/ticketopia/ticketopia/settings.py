@@ -8,6 +8,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from datetime import timedelta
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -36,8 +38,10 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'rest_framework_jwt',
-    'api'
+    'api',
+    'user'
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -134,4 +138,9 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
     ),
 }
-# AUTH_USER_MODEL = 'users.CustomUser'
+
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': timedelta(hours=1),
+}
+
+AUTH_USER_MODEL = 'user.User'

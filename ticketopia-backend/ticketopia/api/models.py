@@ -6,17 +6,6 @@ from django.utils.translation import ugettext_lazy as _
 User = get_user_model()
 
 
-# class CustomUser(AbstractUser):
-#     username = None
-#     email = models.EmailField(_('email address'), unique=True)
-#
-#     USERNAME_FIELD = 'email'
-#     REQUIRED_FIELDS = []
-#
-#     def __str__(self):
-#         return self.email
-
-
 class Category(models.Model):
     MOVIES = 'Movie'
     CONCERTS = 'Concerts'
@@ -41,12 +30,6 @@ class Category(models.Model):
     def __str__(self):
         return f'{self.id} : {self.name}'
 
-    def to_json(self):
-        return {
-            'id': self.id,
-            'name': self.name
-        }
-
 
 class Location(models.Model):
     name = models.CharField(max_length=255)
@@ -59,13 +42,6 @@ class Location(models.Model):
 
     def __str__(self):
         return f'{self.id} : {self.name} : {self.address}'
-
-    def to_json(self):
-        return {
-            'id': self.id,
-            'name': self.name,
-            'address': self.name
-        }
 
 
 class Event(models.Model):
@@ -87,20 +63,6 @@ class Event(models.Model):
     def __str__(self):
         return f'{self.id} : {self.name} : {self.category}: {self.genre}'
 
-    def to_json(self):
-        return {
-            'id': self.id,
-            'name': self.name,
-            'description': self.description,
-            'premiere_date': self.premiere_date,
-            'age_rating': self.age_rating,
-            # 'location': self.location,
-            'poster': self.poster,
-            'quantity': self.quantity,
-            'category': self.category.to_json(),
-            'genre': self.genre
-        }
-
 
 class Ticket(models.Model):
     event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name="tickets")
@@ -113,15 +75,5 @@ class Ticket(models.Model):
         verbose_name = 'Ticket'
         verbose_name_plural = 'Tickets'
 
-    def str(self):
+    def __str__(self):
         return f'{self.id} : {self.event} :  {self.row} : {self.seat} :{self.price} : {self.ticket_type}'
-
-    def to_json(self):
-        return {
-            'id': self.id,
-            'event': self.event,
-            'row': self.row,
-            'seat': self.seat,
-            'price': self.price,
-            'ticket_type': self.ticket_type
-        }
