@@ -5,116 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fe8876-4f39-4847-9671-f5239916d90d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../client/src/app/auth-intercepter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../client/src/app/component/search/search.pipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../client/src/app/model/auth-token.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../client/src/assets/posters/john_wick4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../client/src/assets/posters/soon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../client/src/assets/posters/suzume.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/ticketopia-backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/0004_ticket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/0005_remove_event_location_event_location.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/0006_alter_event_genre.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/0007_alter_event_location.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/0008_alter_event_poster.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/0009_category_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/views/category/cbv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/views/event/fbv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/TempDB.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/temp-db.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/auth/auth.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/auth/auth.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/auth/token-storage.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/auth/token-storage.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/auth/token-storage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/auth/token-storage.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/banner/banner.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/banner/banner.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/banner/banner.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/banner/banner.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/banner/banner.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/banner/banner.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/event-filter/event-filter.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/event-filter/event-filter.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/event-filter/event-filter.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/event-filter/event-filter.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/event-filter/event-filter.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/event-filter/event-filter.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/event-filter/event-filter.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/event-filter/event-filter.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/api/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../client/src/app/component/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/login/login.component.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../client/src/app/component/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/not-found/not-found.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/not-found/not-found.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/not-found/not-found.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/not-found/not-found.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/Category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/category.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/Event.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/event.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/Location.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/location.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/Seat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/seat.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/Ticket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/ticket.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/TicketType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/ticket-type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/service/category.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/service/category.service.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../client/src/app/service/category.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/service/category.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/service/event.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/service/event.service.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../client/src/app/service/event.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/service/event.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/service/user.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/service/user.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/service/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/user/user.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/user/user.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/user/user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/user/user.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0002_alter_category_name.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0002_category_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0003_alter_event_poster.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0004_ticket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0005_remove_event_location_event_location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0006_alter_event_genre.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0007_alter_event_location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0008_alter_event_poster.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0009_category_user.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/category/fbv.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/category/fbv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/account.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/banner1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/banner2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/banner3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/banner4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/banner5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/concert.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/movies.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/theatre.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticketopia/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticketopia/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticketopia/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticketopia/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -127,7 +54,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging madina",
+    "git-widget-placeholder": "madina",
     "last_opened_file_path": "C:/Users/Madina/Desktop/Ticketopia/ticketopia-backend/ticketopia"
   }
 }]]></component>
@@ -158,5 +85,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/api/urls.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

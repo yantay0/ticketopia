@@ -1,20 +1,20 @@
 from rest_framework import serializers
 
-from account.models import Account
+from user.models import User
 
 
 class RegistrationSerializer(serializers.ModelSerializer):
     password2 = serializers.CharField(write_only=True)
 
     class Meta:
-        model = Account
+        model = User
         fields = ['email', 'username', 'password', 'password2']
         extra_kwargs = {
             'password': {'write_only': True},
         }
 
     def save(self):
-        account = Account(
+        account = User(
             email=self.validated_data['email'],
             username=self.validated_data['username']
         )
