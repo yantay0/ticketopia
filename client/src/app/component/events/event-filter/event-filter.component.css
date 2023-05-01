@@ -4,7 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  font-size: 15px;
+  font-size: 20px;
   margin:50px;
 }
 .category{
@@ -17,11 +17,14 @@
 }
 
 .category-title {
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-align: center;
-
 }
 /* CSS style for the selected category */
 .category-selected {
   text-decoration: underline;
+  font-size: 1.5rem;
+}
+a {
+  color: black;
 }

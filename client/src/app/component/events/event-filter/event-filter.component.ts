@@ -1,8 +1,10 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CategoryService} from "../../../service/category.service";
 import {Category} from "../../../model/Category";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {DOMAIN} from "../../../config";
+
+// import * as DOMAIN from "domain";
 
 @Component({
   selector: 'app-event-filter',
@@ -10,25 +12,34 @@ import {DOMAIN} from "../../../config";
   styleUrls: ['./event-filter.component.css']
 })
 export class EventFilterComponent implements OnInit{
-  @Input('category') category:string='All events';
   categories: Category[] = [];
-  selectedCategory: string = 'All events';
-  constructor(private categoryService: CategoryService, private route: ActivatedRoute) {
+  selectedCategory: string;
+  protected readonly DOMAIN = DOMAIN;
+
+  constructor(private categoryService: CategoryService, private route: ActivatedRoute, private router: Router) {
     this.categoryService.getCategories().subscribe((data: Category[])=>{
       this.categories = data;
-      console.log((data))
+      // console.log((data))
     })
-
+    this.selectedCategory  = 'All events'
   }
 
   ngOnInit(): void {
-
-    }
-
-  changeCategoryColor(categoryName: string) {
-    this.selectedCategory = categoryName; // Update the selected category variable
-    console.log(this.selectedCategory)
+    this.route.paramMap.subscribe(params => {
+      this.selectedCategory = <string>params.get('category');
+      if (!this.selectedCategory) {
+        this.selectedCategory = 'All events'
+      }
+    });
   }
 
-  protected readonly DOMAIN = DOMAIN;
+  changeCategory(categoryName: string) {
+    this.route.paramMap.subscribe(params => {
+      this.selectedCategory = <string>params.get('category');
+      if (!categoryName) {
+        this.selectedCategory = 'All events'
+      }
+    });
+  }
+
 }

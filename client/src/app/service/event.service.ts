@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Event} from "../model/Event";
@@ -16,6 +16,12 @@ export class EventService {
   getAllEvents(): Observable<Event[]> {
     return this.client.get<Event[]>(
       `${this.BASE_URL}/api/events`
+    )
+  }
+
+  getEvent(id: number): Observable<Event> {
+    return this.client.get<Event>(
+      `${this.BASE_URL}/api/events/${id}`
     )
   }
 }
