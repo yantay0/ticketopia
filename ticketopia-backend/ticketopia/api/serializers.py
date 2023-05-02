@@ -1,7 +1,7 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
-from api.models import Event, Location, Category, Ticket, Account
+from api.models import Event, Location, Category, Ticket, Account, EventLocation
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -80,3 +80,15 @@ class AccountSerializer(serializers.ModelSerializer):
         model = Account
         fields = '__all__'
         read_only_fields = ['id', 'user', 'tickets']
+
+
+class EventLocationSerializer(serializers.ModelSerializer):
+    event = EventSerializer()
+    location = LocationSerializer
+
+    class Meta:
+        model = EventLocation
+        fields = '__all__'
+        read_only_fields = ['id', 'event', 'location']
+
+
