@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
@@ -7,7 +7,8 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./ticket.component.css']
 })
 export class TicketComponent implements OnInit {
-  eventId: number;
+  @Input() eventId: number;
+  @Output() showTickets: boolean = true
 
   constructor(private route: ActivatedRoute) {
     this.eventId = 0; // or some default value

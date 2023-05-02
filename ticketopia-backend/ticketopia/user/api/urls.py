@@ -6,6 +6,6 @@ from user.api import views
 app_name = "user"
 
 urlpatterns = [
-    path('register/', views.registration_view),
+    path('signup/', views.signup_view),
     path('login/', obtain_jwt_token),
 ]

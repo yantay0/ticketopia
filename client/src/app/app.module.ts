@@ -18,6 +18,7 @@ import {BannerComponent} from './component/banner/banner.component';
 import {SearchPipe} from "./component/search/search.pipe";
 import {EventDetailComponent} from './component/event-detail/event-detail.component';
 import {AuthInterceptor} from "./auth-intercepter";
+import {TicketComponent} from "./component/ticket/ticket.component";
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import {AuthInterceptor} from "./auth-intercepter";
     EventFilterComponent,
     SearchPipe,
     EventDetailComponent,
+    TicketComponent
   ],
   imports: [
     BrowserModule,
