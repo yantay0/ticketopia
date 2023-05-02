@@ -10,6 +10,7 @@ import {EventService} from "../../service/event.service";
 })
 export class EventDetailComponent implements OnInit{
   event: Event;
+  showTickets = false;
 
   constructor(private route: ActivatedRoute, private eventService: EventService) {
     this.event = {} as Event

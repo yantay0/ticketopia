@@ -6,6 +6,7 @@ import {DOMAIN} from "./config";
 import {LoginComponent} from './component/login/login.component';
 import {SignupComponent} from './component/signup/signup.component';
 import {EventDetailComponent} from "./component/event-detail/event-detail.component";
+import {TicketComponent} from "./component/ticket/ticket.component";
 
 const routes: Routes = [
   {path: '', redirectTo: DOMAIN, pathMatch: 'full'},

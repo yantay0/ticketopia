@@ -1,12 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
 .login{
     margin-bottom: 20px;
 }
 
 .login-page {
   width: 360px;
-  padding: 8% 8% 8%;
+  padding: 5% 5% 5%;
   margin: auto;
 }
 .form {
@@ -88,9 +86,8 @@
 }
 body {
   background: #76b852; /* fallback for old browsers */
-  background: rgb(141,194,111);
   background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
+  -moz-osx-font-smoothing: grayscale;
 }

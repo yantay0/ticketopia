@@ -1,7 +1,7 @@
 <div class="about-event">
   <div class="event-poster">
     <h1>{{event.name}}</h1>
-    <img src="assets/posters/{{event.poster}}" alt="event poster" width="300" >
+    <img src="/assets/posters/{{event.poster}}" alt="event poster" width="300" >
   </div>
 
   <div class="event-detail">
@@ -27,8 +27,13 @@
       </div>
     </div>
     <div class="ticket">
-      <button> Buy ticket</button>
+      <button (click)="showTickets=true"> Buy ticket</button>
     </div>
-
+  <ng-container  class="ticket" *ngIf="showTickets">
+    <div class="ticket-container">
+      <button class="btn-close" (click)="showTickets=false">X</button>
+    <app-ticket [eventId]="event.id"></app-ticket>
+      </div>
+  </ng-container>
   </div>
 
