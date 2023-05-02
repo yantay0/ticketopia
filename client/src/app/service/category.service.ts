@@ -13,12 +13,6 @@ export class CategoryService {
   BASE_URL = 'http://127.0.0.1:8000'
   constructor(private client: HttpClient) { }
 
-  login(email: string, password: string): Observable<AuthToken> {
-    return this.client.post<AuthToken>(
-      `${this.BASE_URL}/api/user/login/`,
-      {email, password}
-    )
-  }
   getCategories():Observable<Category[]>{
     return this.client.get<Category[]>(
       `${this.BASE_URL}/api/categories/`

@@ -8,7 +8,7 @@ import {DOMAIN} from "../../config";
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
-  @Output() isLogged: EventEmitter<boolean> = new EventEmitter<boolean>();
+  // @Output() isLogged: EventEmitter<boolean> = new EventEmitter<boolean>();
   constructor(private router: Router) {
   }
 
@@ -18,9 +18,4 @@ export class TopBarComponent {
   goToMainPage() {
     this.router.navigate([DOMAIN]);
   }
-  // logOut() {
-  //   localStorage.removeItem('token');
-  //   this.isLogged.emit(false)
-  // }
-
 }
