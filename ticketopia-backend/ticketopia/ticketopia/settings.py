@@ -140,7 +140,7 @@ REST_FRAMEWORK = {
 }
 
 JWT_AUTH = {
-    'JWT_EXPIRATION_DELTA': timedelta(hours=1),
+    'JWT_EXPIRATION_DELTA': timedelta(days=1),
 }
 
 AUTH_USER_MODEL = 'user.User'
