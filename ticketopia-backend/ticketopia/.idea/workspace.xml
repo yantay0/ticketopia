@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fe8876-4f39-4847-9671-f5239916d90d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/ticket/ticket.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/ticket/ticket.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/ticket/ticket.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/ticket/ticket.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/ticket/ticket.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/ticket/ticket.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +70,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/models.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ticketopia/settings.py</url>
           <line>142</line>

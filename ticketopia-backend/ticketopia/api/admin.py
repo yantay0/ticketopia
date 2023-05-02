@@ -13,9 +13,8 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(Event)
 class EventAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'description', 'premiere_date',
-                    'age_rating', 'location', 'duration', 'poster',
-                    'category', 'tickets_quantity_dance_floor',
-                    'tickets_quantity_vip_zone', 'tickets_quantity_seating_area')
+                    'age_rating', 'duration', 'poster',
+                    'category')
 
 
 @admin.register(Location)
@@ -26,8 +25,8 @@ class LocationAdmin(admin.ModelAdmin):
 
 
 @admin.register(Ticket)
-class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('id', 'event', 'row', 'seat', 'price', 'ticket_type')
+class TicketAdmin(admin.ModelAdmin):
+    list_display = ('id', 'event_location', 'row', 'seat', 'price', 'ticket_type')
 
 
 @admin.register(Account)
