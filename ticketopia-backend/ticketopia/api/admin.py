@@ -1,5 +1,5 @@
 from django.contrib import admin
-from api.models import Location, Event, Category, Ticket, Account, EventLocation
+from api.models import Location, Event, Category, Ticket, Account, EventLocation, TicketType
 
 
 # from ticket.models import Ticket
@@ -26,7 +26,7 @@ class LocationAdmin(admin.ModelAdmin):
 
 @admin.register(Ticket)
 class TicketAdmin(admin.ModelAdmin):
-    list_display = ('id', 'event_location', 'row', 'seat', 'price', 'ticket_type')
+    list_display = ('id', 'account' , 'row', 'seat')
 
 
 @admin.register(Account)
@@ -38,3 +38,8 @@ class AccountAdmin(admin.ModelAdmin):
 class EventLocationAdmin(admin.ModelAdmin):
     list_display = ('id', 'event', 'location', 'start_time',
                     'tickets_quantity_dance_floor', 'tickets_quantity_vip_zone', 'tickets_quantity_seating_area')
+
+
+@admin.register(TicketType)
+class TicketTypeAdmin(admin.ModelAdmin):
+    list_display = ('id', 'event_location', 'name', 'price')
