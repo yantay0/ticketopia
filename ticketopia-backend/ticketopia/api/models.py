@@ -5,7 +5,7 @@ User = get_user_model()
 
 
 class Category(models.Model):
-    MOVIES = 'Movie'
+    MOVIES = 'Movies'
     CONCERTS = 'Concerts'
     THEATRE = 'Theatre'
 
@@ -68,8 +68,8 @@ class Event(models.Model):
 
 class Account(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='account')
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
+    first_name = models.CharField(max_length=255, null=True, blank=True)
+    last_name = models.CharField(max_length=255, null=True, blank=True)
     phone_number = models.CharField(max_length=20, null=True, blank=True)
     date_of_birth = models.DateField(null=True, blank=True)
 
@@ -108,14 +108,6 @@ class Ticket(models.Model):
     ticket_type = models.ForeignKey(TicketType, on_delete=models.CASCADE)
     row = models.CharField(max_length=10)
     seat = models.IntegerField()
-
-    # price = models.DecimalField(max_digits=10, decimal_places=2)
-    # TICKET_TYPE = [
-    #     ('dance_floor', 'Dance Floor'),
-    #     ('vip', 'VIP'),
-    #     ('seating', 'Seating Area')
-    # ]
-    # ticket_type = models.CharField(max_length=255, choices=TICKET_TYPE)
 
     class Meta:
         verbose_name = 'Ticket'

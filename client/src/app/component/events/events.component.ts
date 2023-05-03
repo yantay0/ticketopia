@@ -40,8 +40,7 @@ export class EventsComponent implements OnInit {
 
   private applyFilter() {
     this.filteredEvents = this.events.filter(e => e.category.name.toLowerCase() === this.category.name);
-    console.log(this.filteredEvents);
-    console.log(this.category)
+
   }
 
   onToggle($event: boolean) {
