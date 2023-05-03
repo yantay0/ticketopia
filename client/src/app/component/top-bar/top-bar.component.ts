@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Router} from "@angular/router";
 import {DOMAIN} from "../../config";
 
@@ -7,14 +7,22 @@ import {DOMAIN} from "../../config";
   templateUrl: './top-bar.component.html',
   styleUrls: ['./top-bar.component.css']
 })
-export class TopBarComponent {
-  // @Output() isLogged: EventEmitter<boolean> = new EventEmitter<boolean>();
+export class TopBarComponent implements OnInit{
+  isLogged = false;
   constructor(private router: Router) {
   }
 
-  signIn() {
-    console.log('Sign in button clicked');
+  ngOnInit() {
+    const token = localStorage.getItem('token')
+    if(token) {
+      this.isLogged = true;
+    }
   }
+  logOut() {
+    localStorage.removeItem('token');
+    this.isLogged = false;
+  }
+
   goToMainPage() {
     this.router.navigate([DOMAIN]);
   }

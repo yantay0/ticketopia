@@ -5,19 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b346b0b4-9090-4cad-8e13-b4ee9da0497e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/account/account.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/account/account.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/account/account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/account/account.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/account/account.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/account/account.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/account.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/service/account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/service/account.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/service/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2PHvBFwjScvACW7uEvmAgf8eEKE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "main"
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "madina"
   }
 }]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b346b0b4-9090-4cad-8e13-b4ee9da0497e" name="Changes" comment="" />
+      <created>1683126686210</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683126686210</updated>
+    </task>
     <servers />
   </component>
 </project>

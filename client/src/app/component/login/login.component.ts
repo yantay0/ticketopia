@@ -37,6 +37,7 @@ export class LoginComponent implements OnInit{
         this.router.navigate([`${DOMAIN}`])
         this.isLogged.emit(true);
         this.isLogged.emit(false);
+        console.log(this.email)
         this.email = ''
         this.password = ''
       }, (error) => {
