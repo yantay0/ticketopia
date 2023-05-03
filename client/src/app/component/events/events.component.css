@@ -21,7 +21,7 @@ a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
   width: 150px;
-  height: 250px;
+  /*height: 280px;*/
 }
 
 .event-card:hover {

@@ -5,12 +5,10 @@ export interface Event {
   id: number;
   name: string;
   description: string;
-  premiereDate: Date;
-  ageRating: string;
-  location: Location;
+  premiere_date: Date;
+  age_rating: string;
   duration: number;
   poster?: string | null;
-  quantity: number;
   category: Category;
   genre: string;
 }
