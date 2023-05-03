@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fe8876-4f39-4847-9671-f5239916d90d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/auth/signup-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/auth/signup-info.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/event-detail/event-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/event-filter/event-filter.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/event-filter/event-filter.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/ticket/ticket.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/ticket/ticket.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/event.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/event.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/ticket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/ticket.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/model/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/account.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/api/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
