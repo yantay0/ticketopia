@@ -41,5 +41,8 @@ export class EventFilterComponent implements OnInit{
       }
     });
   }
-
+  logOut() {
+    localStorage.removeItem('token');
+    // this.logged = false;
+  }
 }

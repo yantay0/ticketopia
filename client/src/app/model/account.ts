@@ -3,10 +3,10 @@ import {Ticket} from "./ticket";
 export interface Account {
   userId: number;
   id: number;
-  firstName: string;
-  lastName: string;
-  dateOfBirth: Date;
-  phoneNumber: string;
+  first_name: string;
+  last_name: string;
+  date_of_birth: Date;
+  phone_number: string;
   city: string;
 }
 
