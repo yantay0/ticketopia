@@ -1,5 +1,6 @@
 from rest_framework import serializers
 
+from api.models import Account
 from user.models import User
 
 
@@ -14,7 +15,7 @@ class SignUpSerializer(serializers.ModelSerializer):
         }
 
     def save(self):
-        account = User(
+        user = User(
             email=self.validated_data['email'],
             username=self.validated_data['username']
         )
@@ -22,6 +23,7 @@ class SignUpSerializer(serializers.ModelSerializer):
         password2 = self.validated_data['password2']
         if password != password2:
             raise serializers.ValidationError({'password': 'Passwords must match.'})
-        account.set_password(password)
-        account.save()
-        return account
+        user.set_password(password)
+        user.save()
+        account = Account.objects.create(user=user)
+        return user

@@ -55,7 +55,7 @@ class LocationSerializer(serializers.Serializer):
 
 
 class EventSerializer(serializers.ModelSerializer):
-    # category = CategorySerializer()
+    category = CategorySerializer()
 
     class Meta:
         model = Event
@@ -89,5 +89,3 @@ class EventLocationSerializer(serializers.ModelSerializer):
         model = EventLocation
         fields = '__all__'
         read_only_fields = ['id', 'event', 'location']
-
-
