@@ -6,4 +6,8 @@
      [class.category-selected]="selectedCategory === category.name.toLowerCase()" routerLink="/{{DOMAIN}}/{{category.name.toLowerCase()}}">
     <p class="category-title">{{category.name}}</p>
   </a>
+  <div class="account-btn">
+    <button  routerLink="/profile">My Account</button>
+    <button (click)="logOut()" routerLink="/login" >Log Out</button>
+  </div>
 </div>

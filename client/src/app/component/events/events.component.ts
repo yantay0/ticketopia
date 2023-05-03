@@ -29,7 +29,7 @@ export class EventsComponent implements OnInit {
     });
   }
 
-  private allEvents() {
+  allEvents() {
     this.eventService.getAllEvents().subscribe(events => {
       this.events = events;
       this.filteredEvents = events
@@ -46,8 +46,5 @@ export class EventsComponent implements OnInit {
   onToggle($event: boolean) {
     this.logged = true;
   }
-  logOut() {
-    localStorage.removeItem('token');
-    this.logged = false;
-  }
+
 }

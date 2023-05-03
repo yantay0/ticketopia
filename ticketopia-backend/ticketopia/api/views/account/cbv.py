@@ -9,8 +9,9 @@ class AccountListAPIView(generics.ListCreateAPIView):
     queryset = Account.objects.all()
     serializer_class = AccountSerializer
 
-    # def get_queryset(self):
-    #     return Account.objects.filter(user=self.request.user)
+    def perform_create(self, serializer):
+        user = serializer.save()
+        Account.objects.create(user=user)
 
 
 class AccountDetailAPIView(generics.RetrieveUpdateDestroyAPIView):

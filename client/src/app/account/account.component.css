@@ -1,0 +1,42 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  /*background-color: blue;*/
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

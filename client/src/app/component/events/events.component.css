@@ -1,7 +1,7 @@
 .event-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   margin: 0 100px 0 100px;
   font-size: 12px;
 }
@@ -44,3 +44,4 @@ a {
 img {
   width: 100%;
 }
+
