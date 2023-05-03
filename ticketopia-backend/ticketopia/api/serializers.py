@@ -55,8 +55,7 @@ class LocationSerializer(serializers.Serializer):
 
 
 class EventSerializer(serializers.ModelSerializer):
-    category = CategorySerializer()
-    location = LocationSerializer()
+    # category = CategorySerializer()
 
     class Meta:
         model = Event
@@ -65,7 +64,7 @@ class EventSerializer(serializers.ModelSerializer):
 
 
 class TicketSerializer(serializers.ModelSerializer):
-    event = EventSerializer()
+    # event = EventSerializer()
 
     class Meta:
         model = Ticket
@@ -74,7 +73,7 @@ class TicketSerializer(serializers.ModelSerializer):
 
 
 class AccountSerializer(serializers.ModelSerializer):
-    user = UserSerializer()
+    # user = UserSerializer()
 
     class Meta:
         model = Account
@@ -83,8 +82,8 @@ class AccountSerializer(serializers.ModelSerializer):
 
 
 class EventLocationSerializer(serializers.ModelSerializer):
-    event = EventSerializer()
-    location = LocationSerializer
+    # event = EventSerializer()
+    # location = LocationSerializer
 
     class Meta:
         model = EventLocation

@@ -36,5 +36,5 @@ class AccountAdmin(admin.ModelAdmin):
 
 @admin.register(EventLocation)
 class EventLocationAdmin(admin.ModelAdmin):
-    list_display = ('id', 'event', 'location', 'start_time', 'end_time',
+    list_display = ('id', 'event', 'location', 'start_time',
                     'tickets_quantity_dance_floor', 'tickets_quantity_vip_zone', 'tickets_quantity_seating_area')
