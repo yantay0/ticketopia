@@ -70,7 +70,6 @@ class EventLocation(models.Model):
     event = models.ForeignKey(Event, on_delete=models.CASCADE)
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     start_time = models.DateTimeField()
-    end_time = models.DateTimeField()
     tickets_quantity_dance_floor = models.IntegerField(default=0)
     tickets_quantity_vip_zone = models.IntegerField(default=0)
     tickets_quantity_seating_area = models.IntegerField(default=0)
@@ -106,3 +105,6 @@ class Account(models.Model):
     phone_number = models.CharField(max_length=20, null=True, blank=True)
     tickets = models.ForeignKey(Ticket, on_delete=models.CASCADE, related_name='users', null=True, blank=True)
     date_of_birth = models.DateField(null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.id} : {self.user} :  {self.first_name} : {self.last_name} : {self.phone_number} : {self.tickets} : {self.date_of_birth}'
