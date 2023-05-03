@@ -1,4 +1,4 @@
-import {User} from "./user";
+import {User} from "./account";
 import {Seat} from "./seat";
 import {TicketType} from "./ticket-type";
 

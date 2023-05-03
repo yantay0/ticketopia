@@ -55,7 +55,7 @@ class LocationSerializer(serializers.Serializer):
 
 
 class EventSerializer(serializers.ModelSerializer):
-    # category = CategorySerializer()
+    category = CategorySerializer()
 
     class Meta:
         model = Event
