@@ -5,24 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b346b0b4-9090-4cad-8e13-b4ee9da0497e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/account/account.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/account/account.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/account/account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/account/account.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/account/account.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/account/account.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/admin/admin.component.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/events/events.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/search/search.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/search/search.pipe.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/signup/signup.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/component/top-bar/top-bar.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../client/src/app/model/account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/model/account.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../client/src/app/service/account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/service/account.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/app/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/app/service/user.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/account/cbv.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/account/cbv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

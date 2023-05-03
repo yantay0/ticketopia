@@ -32,7 +32,7 @@ import { AccountComponent } from './account/account.component';
     EventFilterComponent,
     EventDetailComponent,
     TicketComponent,
-    AccountComponent
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
