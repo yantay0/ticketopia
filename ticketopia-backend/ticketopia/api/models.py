@@ -66,6 +66,17 @@ class Event(models.Model):
         return f'{self.id} : {self.name} : {self.category}: {self.genre}'
 
 
+class Account(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='account')
+    first_name = models.CharField(max_length=255)
+    last_name = models.CharField(max_length=255)
+    phone_number = models.CharField(max_length=20, null=True, blank=True)
+    date_of_birth = models.DateField(null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.id} : {self.user} :  {self.first_name} : {self.last_name} : {self.phone_number} : {self.tickets} : {self.date_of_birth}'
+
+
 class EventLocation(models.Model):
     event = models.ForeignKey(Event, on_delete=models.CASCADE)
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
@@ -78,33 +89,37 @@ class EventLocation(models.Model):
         return self.tickets_quantity_dance_floor + self.tickets_quantity_vip_zone + self.tickets_quantity_seating_area
 
 
-class Ticket(models.Model):
-    event_location = models.ForeignKey(EventLocation, on_delete=models.CASCADE, related_name="tickets", null=True)
-    row = models.CharField(max_length=10)
-    seat = models.IntegerField()
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    TICKET_TYPE = [
+class TicketType(models.Model):
+    event_location = models.ForeignKey(EventLocation, on_delete=models.CASCADE)
+    NAME = [
         ('dance_floor', 'Dance Floor'),
         ('vip', 'VIP'),
         ('seating', 'Seating Area')
     ]
-    ticket_type = models.CharField(max_length=255, choices=TICKET_TYPE)
+    name = models.CharField(max_length=255, choices=NAME)
+    price = models.IntegerField()
+
+    class Meta:
+        unique_together = ['name', 'event_location']
+
+
+class Ticket(models.Model):
+    account = models.ForeignKey(Account, on_delete=models.CASCADE, related_name="tickets", null=True)
+    ticket_type = models.ForeignKey(TicketType, on_delete=models.CASCADE)
+    row = models.CharField(max_length=10)
+    seat = models.IntegerField()
+
+    # price = models.DecimalField(max_digits=10, decimal_places=2)
+    # TICKET_TYPE = [
+    #     ('dance_floor', 'Dance Floor'),
+    #     ('vip', 'VIP'),
+    #     ('seating', 'Seating Area')
+    # ]
+    # ticket_type = models.CharField(max_length=255, choices=TICKET_TYPE)
 
     class Meta:
         verbose_name = 'Ticket'
         verbose_name_plural = 'Tickets'
 
     def __str__(self):
-        return f'{self.id} : {self.event} :  {self.row} : {self.seat} :{self.price} : {self.ticket_type}'
-
-
-class Account(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='account')
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
-    phone_number = models.CharField(max_length=20, null=True, blank=True)
-    tickets = models.ForeignKey(Ticket, on_delete=models.CASCADE, related_name='users', null=True, blank=True)
-    date_of_birth = models.DateField(null=True, blank=True)
-
-    def __str__(self):
-        return f'{self.id} : {self.user} :  {self.first_name} : {self.last_name} : {self.phone_number} : {self.tickets} : {self.date_of_birth}'
+        return f'{self.id} : {self.row} : {self.seat}'
