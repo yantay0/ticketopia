@@ -18,8 +18,10 @@ export class EventDetailComponent implements OnInit{
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) =>{
       const id = Number(params.get('id'))
-      this.eventService.getEvent(id).subscribe((event: Event)=>{
+      this.eventService.getEvent(id).subscribe((event)=>{
         this.event = event;
+        this.event.premiere_date = event.premiere_date
+        console.log(event)
       });
     })
   }

@@ -14,7 +14,7 @@
     <a routerLink="events/{{event.id}}">
        <img src="assets/posters/{{event.poster}}" alt="{{event.name}}" class="event-card__poster">
       <h3 class="event-card__title">{{event.name}}</h3>
-      <p class="event-card__date">{{event.premiereDate | date:'longDate'}}</p>
+      <p class="event-card__date">{{event.premiere_date | date:'longDate'}}</p>
     </a>
   </div>
 </div>
@@ -24,7 +24,7 @@
     <a routerLink="{{event.category.name.toLowerCase()}}/events/{{event.id}}">
       <img src="assets/posters/{{event.poster}}" alt="{{event.name}}" class="event-card__poster">
       <h3 class="event-card__title">{{event.name}}</h3>
-      <p class="event-card__date">{{event.premiereDate | date:'longDate'}}</p>
+      <p class="event-card__date">{{event.premiere_date| date:'longDate'}}</p>
     </a>
   </div>
 </div>
